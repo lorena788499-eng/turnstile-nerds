@@ -1,0 +1,41 @@
+<mat-drawer-container class="container">
+
+  <mat-drawer mode="side" opened class="sidenav">
+    <img src="assets/imagens/logo.png" class="logo">
+    <nav class="links">
+      <div class="link" routerLink="dashboard" routerLinkActive="link-ativo">
+        <mat-icon>store</mat-icon>
+        <span>Dashboard</span>
+      </div>
+
+      <br>
+      <div class="link" routerLink="turmas" routerLinkActive="link-ativo">
+        <mat-icon>book</mat-icon>
+        <span>Turmas</span>
+      </div>
+
+      <br>
+      <div class="link" routerLink="ocorrencias" routerLinkActive="link-ativo">
+        <mat-icon>report_problem</mat-icon>
+        <span>Ocorrências</span>
+      </div>
+
+      <br>
+      <div class="link" routerLink="minha-conta" routerLinkActive="link-ativo">
+        <mat-icon>people</mat-icon>
+        <span>Minha Conta</span>
+      </div>
+
+    </nav>
+
+
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  
+
+
+</mat-drawer-container>

@@ -1,0 +1,46 @@
+<div class="container">
+    <form class="formulario">
+        <h2>Nova Turma</h2>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o nome da Turma</mat-label>
+            <input matInput placeholder="Digite o nome da Turma" class="input-nome-turma">
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o período da Turma</mat-label>
+            <mat-select>
+                <mat-option value="one">Manhã</mat-option>
+                <mat-option value="two">Tarde</mat-option>
+                <mat-option value="two">Integral</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o ano letivo</mat-label>
+            <input type="number" matInput placeholder="Digite o ano letivo" class="input-ano-letivo">
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Insira a capacidade da Turma</mat-label>
+            <input type="number" matInput placeholder="Digite a capacidade da Turma" class="input-capacidade-da-turma">
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o nome do professor responsável</mat-label>
+            <input type="number" matInput placeholder="Digite o nome do professor responsável" class="input-professor-responsavel">
+        </mat-form-field>
+
+        <div class="botoes">
+            <app-botao-confirmar texto="Salvar"></app-botao-confirmar>
+        </div>
+    </form>
+</div>
