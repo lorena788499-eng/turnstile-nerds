@@ -1,83 +1,127 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 400px;
-    margin: 60px auto;
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #ffffff;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #38bdf8;
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #7ed321;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.logo {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar li.active {
+  background: rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* CONTEÚDO */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 span {
+  width: 5px;
+  height: 25px;
+  background: #7ed321;
+  margin-right: 10px;
+}
+
+/* BOTÕES */
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete {
+  background: #4caf50;
+  color: white;
+}
+
+.save {
+  background: #4caf50;
+  color: white;
+  height: 45px;
+}
+
+/* CARD */
+.card {
+  margin-top: 30px;
+  background: #2da125;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+  color: #2e7d32;
+  font-weight: bold;
 }
 
 input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #0f172a;
-    color: #e2e8f0;
-    outline: none;
-    transition: 0.3s;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #7ed321;
+  color: black;
+  font-weight: bold;
 }
 
-input:focus {
-    box-shadow: 0 0 10px #38bdf8;
-    border: 1px solid #38bdf8;
+input::placeholder {
+  color: #2e7d32;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-button {
-    width: 48%;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-save {
-    background: #22c55e;
-    color: white;
-}
-
-.btn-save:hover {
-    background: #16a34a;
-    box-shadow: 0 0 10px #22c55e;
-}
-
-.btn-cancel {
-    background: #ef4444;
-    color: white;
-}
-
-.btn-cancel:hover {
-    background: #dc2626;
-    box-shadow: 0 0 10px #ef4444;
+/* LINHA FINAL */
+.row {
+  display: flex;
+  gap: 10px;
 }
