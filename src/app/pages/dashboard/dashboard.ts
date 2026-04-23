@@ -5,7 +5,7 @@ import { Cartao } from "../../shared/cartao/cartao";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [BotaoConfirmar, BotaoCancelar, Cartao],
+  imports: [ Cartao],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
