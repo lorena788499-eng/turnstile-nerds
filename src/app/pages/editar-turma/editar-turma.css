@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #7ed321;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar li.active {
+  background: rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* CONTEÚDO */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 span {
+  width: 5px;
+  height: 25px;
+  background: #7ed321;
+  margin-right: 10px;
+}
+
+/* BOTÕES */
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete {
+  background: #4caf50;
+  color: white;
+}
+
+.save {
+  background: #4caf50;
+  color: white;
+  height: 45px;
+}
+
+/* CARD */
+.card {
+  margin-top: 30px;
+  background: #2da125;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+input {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #7ed321;
+  color: black;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: #2e7d32;
+}
+
+/* LINHA FINAL */
+.row {
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,108 @@
+/* Layout Principal */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5; /* Fundo leve para destacar o branco */
+}
+
+/* Espaço reservado para sua sidebar (não mexer no seu código, apenas referência) */
+.sidebar-mock {
+  width: 250px; 
+  flex-shrink: 0;
+}
+
+/* Área Branca */
+.content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 50px 60px; /* Espaçamento interno */
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  margin: 0;
+  border-left: 6px solid #c2f594;
+  padding-left: 15px;
+  line-height: 1;
+}
+
+/* Botões da Direita */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-action {
+  background-color: #8ce61d;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 35px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  min-width: 180px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+/* Busca */
+.search-container {
+  margin-bottom: 50px;
+}
+
+.search-input {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 280px;
+  font-style: italic;
+  color: #888;
+}
+
+/* Grid de Cards */
+.cards-grid {
+  display: grid;
+  /* Define o tamanho exato dos cards para não ficarem gigantes */
+  grid-template-columns: repeat(auto-fill, 200px); 
+  gap: 30px;
+}
+
+.card {
+  background-color: #c2f594;
+  width: 200px;
+  height: 200px; /* Mantém o card quadrado */
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-title, .card-subtitle {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-period {
+  margin-top: 30px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+}
