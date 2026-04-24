@@ -5,58 +5,28 @@
   font-family: Arial, sans-serif;
 }
 
-.layout {
-  display: flex;
-  height: 100vh;
-  background: #ffffff;
+/* FUNDO BRANCO */
+html, body {
+  background-color: #ffffff !important;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 220px;
-  background: #7ed321;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.logo {
-  font-size: 40px;
-  margin-bottom: 40px;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  padding: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.sidebar li.active {
-  background: rgba(0,0,0,0.1);
-  border-radius: 8px;
-}
-
-/* CONTEÚDO */
-.content {
-  flex: 1;
+/* PÁGINA */
+.page {
+  background-color: #ffffff;
   padding: 40px;
+  padding-left: 120px;
+  min-height: 100vh;
 }
 
 /* HEADER */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
 .header h1 {
   display: flex;
   align-items: center;
+  color: #000;
 }
 
 .header h1 span {
@@ -66,33 +36,14 @@
   margin-right: 10px;
 }
 
-/* BOTÕES */
-.btn {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.delete {
-  background: #4caf50;
-  color: white;
-}
-
-.save {
-  background: #4caf50;
-  color: white;
-  height: 45px;
-}
-
 /* CARD */
 .card {
-  margin-top: 30px;
-  background: #2da125;
+  background: #e0e0e0;
   padding: 30px;
   border-radius: 15px;
   width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* FORM */
@@ -102,26 +53,49 @@
   gap: 15px;
 }
 
+/* LABELS VERDES */
 label {
   color: #2e7d32;
   font-weight: bold;
 }
 
+/* INPUT VERDE COM TEXTO PRETO */
 input {
   padding: 12px;
   border-radius: 20px;
   border: none;
-  background: #7ed321;
-  color: black;
+  background: #7ed321; /* fundo verde */
+
+  color: #000; /* texto preto */
   font-weight: bold;
 }
 
+/* PLACEHOLDER */
 input::placeholder {
-  color: #2e7d32;
+  color: #1b5e20;
 }
 
-/* LINHA FINAL */
-.row {
+/* BOTÕES */
+.actions {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save {
+  background: #4caf50;
+  color: white;
+}
+
+.delete {
+  background: #f44336;
+  color: white;
 }
